@@ -15,18 +15,19 @@ const title = ref('lianjian')
 <style>
 .content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
-  height: 200rpx;
   width: 200rpx;
+  height: 200rpx;
   margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
+
+  /* margin-right: auto;
   margin-bottom: 50rpx;
+  margin-left: auto; */
 }
 
 .text-area {

@@ -18,8 +18,6 @@ npm install yarn -g
 yarn install
 ```
 
-
-
 ### 本工程已经集成[tailwindcss](https://tailwindcss.com/)，使用详情请查阅官方文档
 
 ## IconFonts
@@ -39,14 +37,26 @@ yarn iconfont -d <iconfont url>
 
 **vscode 插件**
 
-[vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+vscode 安装 eslint 插件 .vscode/setting.json 配置如下
+{
+// 开启自动修复
+"editor.codeActionsOnSave": {
+"source.fixAll": false,
+"source.fixAll.eslint": true
+}
+}
 
-[vscode-stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+## stylelint
+
+vscode 安装 stylelint 插件 .vscode/setting.json 配置如下
+"editor.formatOnSave": true,
+"editor.defaultFormatter": "esbenp.prettier-vscode"
 
 [prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-考虑到多人协同开发为保证代码统一风格和效率问题：建议使用vscode编辑器并且安装eslint和styleint插件！
-强烈建议保存代码的时候自动去使用eslint和stylelint格式化代码
+考虑到多人协同开发为保证代码统一风格和效率问题：建议使用 vscode 编辑器并且安装 eslint 和 styleint 插件！
+强烈建议保存代码的时候自动去使用 eslint 和 stylelint 格式化代码
+
 ## Commitlint
 
 ```
